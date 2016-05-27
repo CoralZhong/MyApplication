@@ -9,15 +9,15 @@ import android.widget.TextView;
 /**
  * Created by  on 2016/3/25.
  */
-public class ChangeColorActivity extends Activity {
+public class ChangeColorActivity extends BaseActivity {
     int[] colors = {0xFFFF0000,0xfff436ea,0xff00aaff,0xff00ff6f,0xffffea00};
     int[] ids = {R.id.a1,R.id.a2,R.id.a3,R.id.a4,R.id.a5};
     int index = 1;
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initContentView(Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.changecolor_layout);
 
         Chronometer c = (Chronometer) findViewById(R.id.clock);

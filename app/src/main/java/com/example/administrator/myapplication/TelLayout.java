@@ -6,11 +6,10 @@ import android.os.Bundle;
 /**
  * Created by Administrator on 16-5-13.
  */
-public class EX_layout2 extends Activity{
-
+public class TelLayout extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.exlayout2);
+        setContentView(R.layout.tellayout);
     }
 }

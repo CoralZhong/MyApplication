@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:src="@drawable/eye65"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="QQ号/手机号/邮箱"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="密码"/>
+
+    <Button
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/button4"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn1"
+        android:textSize="19dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

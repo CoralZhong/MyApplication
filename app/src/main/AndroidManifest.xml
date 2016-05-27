@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -10,40 +14,37 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".HelloWorld"></activity>
+        <activity android:name=".APicture"></activity>
+        <activity android:name=".GetResolution"></activity>
+        <activity android:name=".ChangePicture"></activity>
+        <activity android:name=".showheart"></activity>
+        <activity android:name=".TelLayout"></activity>
+        <activity android:name=".QQLoginLayout"></activity>
+        <activity android:name=".LoginLayout"></activity>
+        <activity android:name=".ChangeColorActivity"></activity>
+        <activity android:name=".RelativeLayout"></activity>
+        <activity android:name=".CalculatorLayout"></activity>
 
-        </activity>
-        <activity android:name=".showheart">
-
-        </activity>
-        <activity android:name=".BALLSHOW">
-
-        </activity>
-        <activity android:name=".ChangeColorActivity">
-
-
-        </activity>
-        <activity android:name=".ChangePicture">
-
-        </activity>
-
-        <activity android:name=".RadioButton">
+        <activity android:name=".LinktoTelNum"></activity>
 
 
-        </activity>
-        <activity android:name=".CookBook">
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".BALLSHOW"></activity>
 
 
-        </activity>
 
-        <activity android:name=".PlaneShow">
-               </activity>
+        <activity android:name=".RadioButton"></activity>
+        <activity android:name=".CookBook"></activity>
 
-        <activity android:name=".GetResolution">
+        <activity android:name=".PlaneShow"></activity>
 
-            </activity>
 
-        <activity android:name=".Dictionary">
+
+        <activity android:name=".Dictionary"></activity>
+
+        <activity android:name=".main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

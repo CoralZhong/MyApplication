@@ -10,11 +10,11 @@ import com.example.administrator.myapplication.R;
 /**
  * Created by Administrator on 16-5-23.
  */
-public class GetResolution extends Activity {
+public class GetResolution extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initContentView(Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.getresolution);
         DisplayMetrics dm=new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);

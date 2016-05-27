@@ -8,15 +8,15 @@ import android.widget.ImageView;
 /**
  * Created by Administrator on 16-5-17.
  */
-public class ChangePicture extends Activity{
+public class ChangePicture extends BaseActivity{
 
     public int[] a = {R.drawable.icon_11,R.drawable.icon_28,R.drawable.icon_30,R.drawable.icon_33,R.drawable.icon_37};
     public int i = 0;
     int alpha = 255;
     ImageView imgView;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initContentView(Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.changepicture);
         imgView= (ImageView) findViewById(R.id.pic);
         imgView.setImageResource(a[0]);

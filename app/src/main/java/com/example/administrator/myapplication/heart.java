@@ -47,7 +47,7 @@ public class heart extends View implements View.OnTouchListener {
         Paint p = new Paint();
 
         p.setAntiAlias(true);
-        p.setStrokeWidth(5);
+        p.setStrokeWidth(8);
 
 
         double x;
@@ -80,7 +80,7 @@ public class heart extends View implements View.OnTouchListener {
 //
 //            }
             p.setColor(c);
-            for ( x= -2; x <= 2; x = x + 0.001) {
+            for ( x= -2; x <= 2; x = x + 0.005) {
                 y = (-1) * Math.sqrt(Math.sqrt(x * x) * 2 - (x * x));
                 canvas.drawPoint((float)( x * 100 +x1), (float)( y * 100 + y1), p);
                 canvas.drawPoint((float)( x * 50 +x1), (float)( y * 50 + y1), p);
