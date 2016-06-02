@@ -2,15 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/baseactivity"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除数据"
+        android:id="@+id/clearuser"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#0b9b0b"
-        android:text="获取验证短信"
-        android:id="@+id/sendmsg"
-        android:onClick="sendmsg"
-
-        />
+        android:text="退出登录"
+        android:onClick="logout"/>
 
 </LinearLayout>

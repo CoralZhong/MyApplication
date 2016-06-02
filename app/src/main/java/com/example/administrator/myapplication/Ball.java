@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,8 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
+
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -41,6 +44,7 @@ public class Ball extends View implements View.OnTouchListener{
     }
 
     Handler h=new Handler(){
+        boolean flag=false;
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -51,11 +55,23 @@ public class Ball extends View implements View.OnTouchListener{
                     xx = -xx;
                 }else if(y<20){
                     yy=-yy;
-                }else if(y>1900){
-                    yy=-yy;
+                }else if(y>=1300){
+                    if(x>left&&x<right){
+                        yy=-yy;
+                    }
+                    else{
+                        flag=true;
+                    }
+
+
                 }
+
+                if (flag){
+                    x=540;
+                    y=300;
+                }else{
                 x+=xx;
-                y+=yy;
+                y+=yy;}
                 invalidate();
             }
 
@@ -82,8 +98,13 @@ public class Ball extends View implements View.OnTouchListener{
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         int hx= (int) event.getX();
+        boolean timer=true;
         if(x==540){
-            t=new Timer();
+            if(timer){
+                t=new Timer();
+                timer=false;
+            }
+
             t.schedule(new TimerTask() {
                 @Override
                 public void run() {
@@ -92,7 +113,7 @@ public class Ball extends View implements View.OnTouchListener{
                     h.sendMessage(m);
 
                 }
-            },100,100);
+            },100,50);
         }
 
         left=hx-150;

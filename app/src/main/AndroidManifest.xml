@@ -27,19 +27,28 @@
         <activity android:name=".CalculatorLayout"></activity>
 
         <activity android:name=".LinktoTelNum"></activity>
+        <activity android:name=".RadioButton"></activity>
+        <activity android:name=".Message60seconds"></activity>
+        <activity android:name=".BALLSHOW"></activity>
+        <activity android:name=".PhoneCallAttribution"></activity>
+        <activity android:name=".CookBook"></activity>
+        <activity android:name=".QQInnerLayout"></activity>
+        <activity android:name=".EducationalLevel_spinner"></activity>
 
 
         <activity android:name=".MainActivity"></activity>
 
-        <activity android:name=".BALLSHOW"></activity>
+
+        <activity android:name=".Board"></activity>
+        <activity android:name=".Bomb"></activity>
+        <activity android:name=".QQlogin"></activity>
+        <activity android:name=".QQlogin2"></activity>
 
 
 
-        <activity android:name=".RadioButton"></activity>
-        <activity android:name=".CookBook"></activity>
+
 
         <activity android:name=".PlaneShow"></activity>
-
 
 
         <activity android:name=".Dictionary"></activity>
