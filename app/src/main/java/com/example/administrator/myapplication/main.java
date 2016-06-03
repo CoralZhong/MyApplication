@@ -16,12 +16,12 @@ public class main extends BaseActivity{
     String[] name=new String[]{"1.Hello World","2.打开一张图片","3.获取手机信息","4.轮循换图","5.点击画心","6-1.电话号码布局","6-2.QQ登录布局","6-3.登录布局",
             "7.霓虹灯","8.梅花布局", "9.计算器布局","9-1.飞机拖动","10.连接电话本","11.单选多选按钮","12.短信验证",
             "12-1.弹球游戏","12-2.手机归属地查询","12-3.菜谱","13.QQ内部布局","13-1.下拉列表显示学历","13-2.自动播放广告",
-            "画板","爆炸","自动登录","15-2.自动搜索"};
+            "画板","爆炸","自动登录","文件浏览器","15-2.自动搜索"};
 
     Class[] clazz = {HelloWorld.class,APicture.class,GetResolution.class,ChangePicture.class,showheart.class,TelLayout.class,QQLoginLayout.class,LoginLayout.class,
             ChangeColorActivity.class,RelativeLayout.class,CalculatorLayout.class,CalculatorLayout.class,LinktoTelNum.class,RadioButton.class,Message60seconds.class,
-            BALLSHOW.class,PhoneCallAttribution.class,CookBook.class,QQInnerLayout.class,EducationalLevel_spinner.class,
-            Board.class,Bomb.class,QQlogin.class,Dictionary.class};
+            BALLSHOW.class,PhoneCallAttribution.class,CookBook.class,QQInnerLayout.class,EducationalLevel_spinner.class,Advertisement.class,
+            Board.class,Bomb.class,QQlogin.class,FileBrowser.class,Dictionary.class};
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.main);

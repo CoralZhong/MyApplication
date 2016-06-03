@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -34,6 +36,7 @@
         <activity android:name=".CookBook"></activity>
         <activity android:name=".QQInnerLayout"></activity>
         <activity android:name=".EducationalLevel_spinner"></activity>
+        <activity android:name=".Advertisement"></activity>
 
 
         <activity android:name=".MainActivity"></activity>
@@ -50,7 +53,7 @@
 
         <activity android:name=".PlaneShow"></activity>
 
-
+        <activity android:name=".FileBrowser"></activity>
         <activity android:name=".Dictionary"></activity>
 
         <activity android:name=".main">
