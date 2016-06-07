@@ -3,15 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/baseactivity"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/whattobespeak"/>
-    <Button
+    <GridView android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="朗读"
-        android:layout_gravity="center"
-        android:onClick="speak"/>
+        android:horizontalSpacing="1pt"
+        android:verticalSpacing="1pt"
+        android:numColumns="2"
+        android:gravity="center"
+        android:id="@+id/gridview1">
+
+    </GridView>
 
 </LinearLayout>

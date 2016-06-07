@@ -46,6 +46,10 @@
         <activity android:name=".Advertisement"></activity>
 
 
+        <activity android:name=".DateChooser"></activity>
+        <activity android:name=".DateChooser2"></activity>
+        <activity android:name=".TabHostActivity"></activity>
+
         <activity android:name=".MainActivity"></activity>
 
 
@@ -62,7 +66,9 @@
 
         <activity android:name=".FileBrowser"></activity>
         <activity android:name=".Dictionary"></activity>
-
+        <activity android:name=".Speaker"></activity>
+        <activity android:name=".Switch3seconds"></activity>
+        <activity android:name=".GridViewActivity"></activity>
         <activity android:name=".main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
