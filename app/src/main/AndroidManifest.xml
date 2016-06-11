@@ -50,6 +50,16 @@
         <activity android:name=".QQInnerLayout"></activity>
         <activity android:name=".EducationalLevel_spinner"></activity>
         <activity android:name=".Advertisement"></activity>
+        <activity android:name=".City"></activity>
+        <activity android:name=".ProvinceCity"></activity>
+        <activity android:name=".SendMsgPhoneCall"></activity>
+        <activity android:name=".GetLinkMan"></activity>
+        <activity android:name=".ConfigurationActivity"></activity>
+        <activity android:name=".Download"></activity>
+        <activity android:name=".PicBigSmall"></activity>
+        <activity android:name=".ChangePicLR"></activity>
+        <activity android:name=".GestureActivity"></activity>
+        <activity android:name=".GestureActivity2"></activity>
 
 
         <activity android:name=".DateChooser"></activity>
@@ -66,10 +76,6 @@
         <activity android:name=".Bomb"></activity>
         <activity android:name=".QQlogin"></activity>
         <activity android:name=".QQlogin2"></activity>
-
-
-
-
 
         <activity android:name=".PlaneShow"></activity>
 

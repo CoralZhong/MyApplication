@@ -55,5 +55,5 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    abstract void initContentView(Bundle savedInstanceState);
+    protected abstract void initContentView(Bundle savedInstanceState);
 }

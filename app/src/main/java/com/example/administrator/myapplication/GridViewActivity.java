@@ -19,7 +19,7 @@ public class GridViewActivity extends BaseActivity {
     int[] imgid={R.drawable.bom_f01,R.drawable.icon_37,R.drawable.icon_33,R.drawable.icon_28,R.drawable.icon_11,R.drawable.bom_f11};
     String[]goodsname={"商品1","商品2","商品3","商品4","商品5","商品6"};
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.gridview);
         List<Map<String,Object>> list=new ArrayList<Map<String,Object>>();
         for(int i=0;i<imgid.length;i++){
