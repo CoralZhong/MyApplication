@@ -16,7 +16,7 @@ public class Resolver extends BaseActivity {
     ContentResolver contentResolver;
     Uri uri=Uri.parse("content://com.ralph.second/students");
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.resolver);
         contentResolver=getContentResolver();
         lv= (ListView) findViewById(R.id.resolverlist);

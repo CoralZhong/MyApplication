@@ -24,7 +24,7 @@ public class PhoneCallAttribution extends BaseActivity {
     EditText et;
     TextView tv;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.phonecallattribution);
 
     }

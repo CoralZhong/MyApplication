@@ -33,7 +33,7 @@ public class MenuActivity extends BaseActivity {
     final int MENU3 = 0X113;
 
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.menuactivity);
         tv = (TextView) findViewById(R.id.changeabletext);
         registerForContextMenu(tv);

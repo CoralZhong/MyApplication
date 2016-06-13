@@ -18,7 +18,7 @@ public class Message60seconds extends BaseActivity {
     Timer t;
 
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.message60seconds);
         b= (Button) findViewById(R.id.sendmsg);
     }

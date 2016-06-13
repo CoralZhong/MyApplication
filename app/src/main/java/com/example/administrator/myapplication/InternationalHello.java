@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class InternationalHello extends BaseActivity {
     TextView tv;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.internationalhello);
 //        tv= (TextView) findViewById(R.id.internationaltxt);
 //        tv.setText(R.string.hello);

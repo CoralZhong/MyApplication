@@ -19,7 +19,7 @@ public class MediaRecorderActivity extends BaseActivity {
 
     File file;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.mediarecorderactivity);
     }
 

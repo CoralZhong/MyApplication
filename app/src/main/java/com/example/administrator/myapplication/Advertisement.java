@@ -14,7 +14,7 @@ public class Advertisement extends BaseActivity {
     int[] imgid={R.drawable.ad1,R.drawable.ad2,R.drawable.ad3};
     AdapterViewFlipper avf;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.advertisement);
         avf= (AdapterViewFlipper) findViewById(R.id.ad);
         BaseAdapter ba=new BaseAdapter() {

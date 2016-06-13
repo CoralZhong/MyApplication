@@ -18,7 +18,7 @@ public class GetLinkMan extends BaseActivity {
     final int PICK_CONTACT=0;
 
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
      setContentView(R.layout.getlinkman);
         Button b= (Button) findViewById(R.id.showbtn);
         b.setOnClickListener(new View.OnClickListener() {

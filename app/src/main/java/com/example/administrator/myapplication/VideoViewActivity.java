@@ -14,7 +14,7 @@ public class VideoViewActivity extends BaseActivity {
     VideoView vv;
     MediaController mc;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
      setContentView(R.layout.videoviewactivity);
         getWindow().setFormat(PixelFormat.TRANSLUCENT);
         vv= (VideoView) findViewById(R.id.video);

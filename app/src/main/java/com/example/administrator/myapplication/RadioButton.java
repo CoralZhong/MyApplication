@@ -15,7 +15,7 @@ public class RadioButton extends BaseActivity{
 
 
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.radiobutton);
     }
 

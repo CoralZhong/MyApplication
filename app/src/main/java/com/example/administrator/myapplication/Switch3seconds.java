@@ -23,7 +23,7 @@ public class Switch3seconds extends BaseActivity {
         }
     };
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.switch3seconds);
         vs= (ViewSwitcher) findViewById(R.id.viewswitcher);
         View v1=View.inflate(this,R.layout.apicture,null);

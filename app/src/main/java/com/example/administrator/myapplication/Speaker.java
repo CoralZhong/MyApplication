@@ -14,7 +14,7 @@ public class Speaker extends BaseActivity {
     EditText et;
     SpeechSynthesizer ss;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.spraker);
         et = (EditText) findViewById(R.id.whattobespeak);
         ss = SpeechSynthesizer.getInstance();

@@ -10,7 +10,7 @@ import android.widget.Spinner;
 public class EducationalLevel_spinner extends BaseActivity {
     Spinner sp;
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.educationallevel);
         sp= (Spinner) findViewById(R.id.spinner);
         String[] edu={"小学","初中","高中","专科","本科","研究生"};

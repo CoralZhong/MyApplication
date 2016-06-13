@@ -15,7 +15,7 @@ public class Bomb extends BaseActivity {
     MediaPlayer music;
 
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.bomb);
         iv = (ImageView) findViewById(R.id.bomb);
         ad = (AnimationDrawable) iv.getBackground();

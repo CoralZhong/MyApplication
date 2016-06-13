@@ -10,7 +10,8 @@ import android.widget.QuickContactBadge;
 public class LinktoTelNum extends BaseActivity {
 
     @Override
-    void initContentView(Bundle savedInstanceState) {
+    protected void
+    initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.linktotelnum);
         QuickContactBadge qcb= (QuickContactBadge) findViewById(R.id.quickcontactbadge);
         qcb.assignContactFromPhone("15998851665",false);

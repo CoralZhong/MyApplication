@@ -60,8 +60,10 @@
         <activity android:name=".ChangePicLR"></activity>
         <activity android:name=".GestureActivity"></activity>
         <activity android:name=".GestureActivity2"></activity>
-
-
+        <activity android:name=".UploadStuInfo"></activity>
+        <activity android:name=".StockActivity"></activity>
+        <activity android:name=".ShakeShake"></activity>
+        <activity android:name=".DialogActivity"></activity>
         <activity android:name=".DateChooser"></activity>
         <activity android:name=".DateChooser2"></activity>
         <activity android:name=".TabHostActivity"></activity>

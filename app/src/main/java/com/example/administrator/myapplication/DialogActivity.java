@@ -12,37 +12,35 @@ import android.widget.Toast;
  */
 public class DialogActivity extends BaseActivity {
 
-        Button btn;
-            @Override
-            protected void initContentView(Bundle savedInstanceState) {
-                     setContentView(R.layout.dialogactivity);
-                     btn = (Button) findViewById(R.id.button36);
-                 }
-             public void tanchu(View view){
-                    AlertDialog b = new AlertDialog.Builder(this)
-                             .setTitle("对话框")
-                             .setIcon(R.drawable.icon_11)
-                             .setMessage("弹出对话框")
-                            .setPositiveButton("确定", new DialogInterface.OnClickListener()
-                                     {
-                                     @Override
-                                     public void onClick(DialogInterface dialog, int which)
-                                     {
-                                             Toast.makeText(DialogActivity.this, "确定", Toast.LENGTH_SHORT).show();
-                                         }
-                                })
-                             .setNegativeButton("取消", new DialogInterface.OnClickListener()
-                                    {
-                                    @Override
-                                     public void onClick(DialogInterface dialog, int which)
-                                     {
-                                             Toast.makeText(DialogActivity.this, "取消", Toast.LENGTH_SHORT).show();
-                                     }
-                                })
-                             .create();
-                     b.show();
-                }
+    Button btn;
 
-
+    @Override
+    protected void initContentView(Bundle savedInstanceState) {
+        setContentView(R.layout.dialogactivity);
+        btn = (Button) findViewById(R.id.button36);
     }
+
+    public void tanchu(View view) {
+        AlertDialog b = new AlertDialog.Builder(this)
+                .setTitle("对话框")
+                .setIcon(R.drawable.icon_11)
+                .setMessage("弹出对话框")
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(DialogActivity.this, "确定", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(DialogActivity.this, "取消", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .create();
+        b.show();
+    }
+
+
+}
 
