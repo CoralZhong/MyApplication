@@ -55,6 +55,7 @@
         <activity android:name=".BALLSHOW"></activity>
         <activity android:name=".PhoneCallAttribution"></activity>
         <activity android:name=".CookBook"></activity>
+        <activity android:name=".CookDetails"></activity>
         <activity android:name=".QQInnerLayout"></activity>
         <activity android:name=".EducationalLevel_spinner"></activity>
         <activity android:name=".Advertisement"></activity>
